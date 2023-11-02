@@ -140,7 +140,7 @@ public class Menu2 extends javax.swing.JInternalFrame {
         Set<Ciudad> ciudades = listarCiudades();
  
         for (Ciudad ciu : ciudades) {
-            if (vistaPasajeDestino.equals(ciu.getNombre())) {
+            if (!vistaPasajeDestino.equals(ciu.getNombre())) {
                 jCBVistaPasajeOrigen.addItem(ciu.getNombre());
             }
         }
@@ -305,17 +305,17 @@ public class Menu2 extends javax.swing.JInternalFrame {
         jCBVistaCiudadPais = new javax.swing.JComboBox<>();
         jLNombrePais = new javax.swing.JLabel();
         jTVistaCiudadPais = new javax.swing.JTextField();
-        jBVistaCiudadAgregar = new javax.swing.JButton();
         jLTitulo = new javax.swing.JLabel();
+        jBVistaCiudadAgregar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jTAgregarEstablec = new javax.swing.JTextField();
-        jBVistaEstablecimientoAgregar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jTDireccionEstablec = new javax.swing.JTextField();
         jTDTelefono = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLTitulo1 = new javax.swing.JLabel();
+        jBVistaEstablecimientoAgregar = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLVistaPasajeTransporte = new javax.swing.JLabel();
         jLVistaPasajeOrigen = new javax.swing.JLabel();
@@ -324,9 +324,9 @@ public class Menu2 extends javax.swing.JInternalFrame {
         jCBVistaPasajeDestino = new javax.swing.JComboBox<>();
         jLVistaPasajeImporte = new javax.swing.JLabel();
         jTVistaPasajeImporte = new javax.swing.JTextField();
-        jBVistaPasajeCargar = new javax.swing.JButton();
         jCBVistaPasajeTransporte = new javax.swing.JComboBox<>();
         jLTitulo2 = new javax.swing.JLabel();
+        jBVistaPasajeCargar = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLTitulo3 = new javax.swing.JLabel();
         jCBVistaEstadiaServicio = new javax.swing.JComboBox<>();
@@ -358,9 +358,9 @@ public class Menu2 extends javax.swing.JInternalFrame {
         jLVistaPaquetePais = new javax.swing.JLabel();
         jTFVistaPaqueteTemporada = new javax.swing.JTextField();
         jLVistaPaquetePrecio = new javax.swing.JLabel();
-        jTFVistaPaqueteValorTotal = new javax.swing.JTextField();
         jBVistaPaqueteCrear = new javax.swing.JButton();
         jLTitulo4 = new javax.swing.JLabel();
+        jTFVistaPaqueteValorTotal = new javax.swing.JTextField();
 
         jTPContenedor.setBackground(new java.awt.Color(72, 92, 113));
 
@@ -422,19 +422,19 @@ public class Menu2 extends javax.swing.JInternalFrame {
             }
         });
 
+        jLTitulo.setBackground(new java.awt.Color(193, 126, 48));
+        jLTitulo.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
+        jLTitulo.setForeground(new java.awt.Color(193, 126, 48));
+        jLTitulo.setText("Geolocalización");
+
         jBVistaCiudadAgregar.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         jBVistaCiudadAgregar.setForeground(new java.awt.Color(255, 255, 255));
-        jBVistaCiudadAgregar.setText("Agregar");
+        jBVistaCiudadAgregar.setText("Cargar");
         jBVistaCiudadAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBVistaCiudadAgregarActionPerformed(evt);
             }
         });
-
-        jLTitulo.setBackground(new java.awt.Color(193, 126, 48));
-        jLTitulo.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
-        jLTitulo.setForeground(new java.awt.Color(193, 126, 48));
-        jLTitulo.setText("Geolocalización");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -450,22 +450,20 @@ public class Menu2 extends javax.swing.JInternalFrame {
                             .addComponent(jLPais))
                         .addGap(42, 42, 42)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCBVistaCiudadProvincia, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jCBVistaCiudadPais, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTVistaCiudadCiudad, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(54, 54, 54)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLNombreProvincia)
-                                    .addComponent(jLTemporadaAlta)
-                                    .addComponent(jLNombrePais))
-                                .addGap(42, 42, 42)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTVistaCiudadProvincia, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jDCVistaCiudadTemporadaAlta, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTVistaCiudadPais, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jBVistaCiudadAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jCBVistaCiudadProvincia, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jCBVistaCiudadPais, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTVistaCiudadCiudad, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBVistaCiudadAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(54, 54, 54)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLNombreProvincia)
+                            .addComponent(jLTemporadaAlta)
+                            .addComponent(jLNombrePais))
+                        .addGap(42, 42, 42)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTVistaCiudadProvincia, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jDCVistaCiudadTemporadaAlta, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTVistaCiudadPais, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(386, 386, 386)
                         .addComponent(jLTitulo)))
@@ -495,9 +493,9 @@ public class Menu2 extends javax.swing.JInternalFrame {
                     .addComponent(jCBVistaCiudadPais, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLPais)
                     .addComponent(jLNombrePais))
-                .addGap(60, 60, 60)
-                .addComponent(jBVistaCiudadAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(277, Short.MAX_VALUE))
+                .addGap(74, 74, 74)
+                .addComponent(jBVistaCiudadAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(264, Short.MAX_VALUE))
         );
 
         jTPContenedor.addTab("Agregar geolocalización", jPanel1);
@@ -508,15 +506,6 @@ public class Menu2 extends javax.swing.JInternalFrame {
         jTAgregarEstablec.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTAgregarEstablecActionPerformed(evt);
-            }
-        });
-
-        jBVistaEstablecimientoAgregar.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        jBVistaEstablecimientoAgregar.setForeground(java.awt.Color.white);
-        jBVistaEstablecimientoAgregar.setText("Agregar");
-        jBVistaEstablecimientoAgregar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBVistaEstablecimientoAgregarActionPerformed(evt);
             }
         });
 
@@ -553,6 +542,15 @@ public class Menu2 extends javax.swing.JInternalFrame {
         jLTitulo1.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
         jLTitulo1.setForeground(new java.awt.Color(193, 126, 48));
         jLTitulo1.setText("Agregar Establecimiento");
+
+        jBVistaEstablecimientoAgregar.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
+        jBVistaEstablecimientoAgregar.setForeground(new java.awt.Color(255, 255, 255));
+        jBVistaEstablecimientoAgregar.setText("Agregar");
+        jBVistaEstablecimientoAgregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBVistaEstablecimientoAgregarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -600,9 +598,9 @@ public class Menu2 extends javax.swing.JInternalFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTDTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(55, 55, 55)
-                .addComponent(jBVistaEstablecimientoAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(302, Short.MAX_VALUE))
+                .addGap(82, 82, 82)
+                .addComponent(jBVistaEstablecimientoAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(276, 276, 276))
         );
 
         jTPContenedor.addTab("Agregar Establecimiento", jPanel2);
@@ -661,15 +659,6 @@ public class Menu2 extends javax.swing.JInternalFrame {
             }
         });
 
-        jBVistaPasajeCargar.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        jBVistaPasajeCargar.setForeground(java.awt.Color.white);
-        jBVistaPasajeCargar.setText("Cargar");
-        jBVistaPasajeCargar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBVistaPasajeCargarActionPerformed(evt);
-            }
-        });
-
         jCBVistaPasajeTransporte.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         jCBVistaPasajeTransporte.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -686,6 +675,15 @@ public class Menu2 extends javax.swing.JInternalFrame {
         jLTitulo2.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
         jLTitulo2.setForeground(new java.awt.Color(193, 126, 48));
         jLTitulo2.setText("Agregar Pasaje");
+
+        jBVistaPasajeCargar.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
+        jBVistaPasajeCargar.setForeground(new java.awt.Color(255, 255, 255));
+        jBVistaPasajeCargar.setText("Cargar");
+        jBVistaPasajeCargar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBVistaPasajeCargarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -711,10 +709,10 @@ public class Menu2 extends javax.swing.JInternalFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jBVistaPasajeCargar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addComponent(jCBVistaPasajeTransporte, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jTVistaPasajeImporte, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                                                .addComponent(jTVistaPasajeImporte, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jBVistaPasajeCargar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                         .addGap(213, 213, 213)))
                 .addContainerGap(758, Short.MAX_VALUE))
         );
@@ -739,9 +737,9 @@ public class Menu2 extends javax.swing.JInternalFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLVistaPasajeImporte)
                     .addComponent(jTVistaPasajeImporte, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(51, 51, 51)
-                .addComponent(jBVistaPasajeCargar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(266, Short.MAX_VALUE))
+                .addGap(56, 56, 56)
+                .addComponent(jBVistaPasajeCargar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(262, Short.MAX_VALUE))
         );
 
         jTPContenedor.addTab("Agregar Pasaje", jPanel3);
@@ -816,7 +814,7 @@ public class Menu2 extends javax.swing.JInternalFrame {
         jLProvincia7.setText("Ciudad Destino");
 
         jBVistaEstadiaAgregar.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
-        jBVistaEstadiaAgregar.setForeground(java.awt.Color.white);
+        jBVistaEstadiaAgregar.setForeground(new java.awt.Color(255, 255, 255));
         jBVistaEstadiaAgregar.setText("Agregar");
         jBVistaEstadiaAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -852,7 +850,7 @@ public class Menu2 extends javax.swing.JInternalFrame {
                             .addComponent(jCBVistaEstadiaTemporada, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jCBVistaEstadiaCiudadDestino, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTVistaEstadiaImporteDiario, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBVistaEstadiaAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jBVistaEstadiaAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(744, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -893,9 +891,9 @@ public class Menu2 extends javax.swing.JInternalFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTVistaEstadiaImporteDiario, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLProvincia2))
-                .addGap(32, 32, 32)
-                .addComponent(jBVistaEstadiaAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addGap(34, 34, 34)
+                .addComponent(jBVistaEstadiaAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(112, Short.MAX_VALUE))
         );
 
         jTPContenedor.addTab("Agregar Estadia", jPanel4);
@@ -968,14 +966,6 @@ public class Menu2 extends javax.swing.JInternalFrame {
         jLVistaPaquetePrecio.setForeground(new java.awt.Color(255, 255, 255));
         jLVistaPaquetePrecio.setText("Valor del Paquete");
 
-        jTFVistaPaqueteValorTotal.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        jTFVistaPaqueteValorTotal.setForeground(new java.awt.Color(0, 0, 0));
-        jTFVistaPaqueteValorTotal.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTFVistaPaqueteValorTotalActionPerformed(evt);
-            }
-        });
-
         jBVistaPaqueteCrear.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         jBVistaPaqueteCrear.setForeground(new java.awt.Color(255, 255, 255));
         jBVistaPaqueteCrear.setText("Crear");
@@ -989,6 +979,9 @@ public class Menu2 extends javax.swing.JInternalFrame {
         jLTitulo4.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
         jLTitulo4.setForeground(new java.awt.Color(193, 126, 48));
         jLTitulo4.setText("Armado de paquetes");
+
+        jTFVistaPaqueteValorTotal.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jTFVistaPaqueteValorTotal.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -1057,7 +1050,7 @@ public class Menu2 extends javax.swing.JInternalFrame {
                     .addComponent(jLVistaPaquetePasajeViajandoEn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jCBVistaPaquetePasajeViajando, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLVistaPaquetePrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTFVistaPaqueteValorTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTFVistaPaqueteValorTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(68, 68, 68)
                 .addComponent(jBVistaPaqueteCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(231, Short.MAX_VALUE))
@@ -1082,35 +1075,6 @@ public class Menu2 extends javax.swing.JInternalFrame {
     private void jTAgregarEstablecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTAgregarEstablecActionPerformed
         
     }//GEN-LAST:event_jTAgregarEstablecActionPerformed
-
-    private void jBVistaEstablecimientoAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVistaEstablecimientoAgregarActionPerformed
-       try {
-            EstablecimientoData establecimientoData = new EstablecimientoData();
-            String nombre = jTAgregarEstablec.getText();
-            if (nombre.isEmpty()) {
-                JOptionPane.showMessageDialog(null, "El campo Nombre está vacío. Por favor, ingresa un Nombre de Establecimiento.");
-                return;
-            }
-
-            Establecimiento establecimiento = new Establecimiento();
-            establecimiento.setNombre(nombre);
-
-            String direccion = jTDireccionEstablec.getText(); 
-            String telefono = jTDTelefono.getText();   
-
-            establecimiento.setDireccion(direccion);
-            establecimiento.setTelefono(telefono);
-
-            EstablecimientoData.cargarEstablecimiento(establecimiento);
-
-            jTAgregarEstablec.setText("");
-
-            jTDTelefono.setText("");
-            jTDireccionEstablec.setText("");
-            jTAgregarEstablec.requestFocus();
-        } catch (NumberFormatException e) {
-        }
-    }//GEN-LAST:event_jBVistaEstablecimientoAgregarActionPerformed
 
     private void jTDireccionEstablecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTDireccionEstablecActionPerformed
         
@@ -1148,82 +1112,6 @@ public class Menu2 extends javax.swing.JInternalFrame {
         }    
     }//GEN-LAST:event_jCBVistaCiudadPaisItemStateChanged
     
-    private void jBVistaCiudadAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVistaCiudadAgregarActionPerformed
-        Ciudad ciudadNueva = new Ciudad();
-        Provincia provinciaAux = new Provincia();
-        Pais paisAux = new Pais();
-
-        Date selectedDateCheckin = jDCVistaCiudadTemporadaAlta.getDate();
-
-        if (selectedDateCheckin != null) {
-            temporadaAlta = selectedDateCheckin.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-
-        } else {
-            temporadaAlta = LocalDate.of(2023,12,31);
-        }
-
-        if (!vistaCiudadProvincia.equals("Nueva Provincia")) {
-            if (!vistaCiudadPais.equals("Nuevo Pais")) {
-                paisAux = PaisData.buscarPaisPorNombre(vistaCiudadPais);
-                provinciaAux = ProvinciaData.buscarProvinciaPorNombre(vistaCiudadProvincia);
-                ciudadNueva.setPais(paisAux);
-                ciudadNueva.setProvincia(provinciaAux);
-                ciudadNueva.setNombre(jTVistaCiudadCiudad.getText());
-                ciudadNueva.setFechaDeTemporadaAlta(temporadaAlta);
-                ciudadNueva.setEstado(true);
-                CiudadData.cargarCiudad(ciudadNueva);
-            } else if (vistaCiudadPais.equals("Nuevo Pais")) {
-                paisAux.setNombre(jTVistaCiudadPais.getText());
-                PaisData.cargarPais(paisAux);
-                provinciaAux = ProvinciaData.buscarProvinciaPorNombre(vistaCiudadProvincia);
-                ciudadNueva.setPais(paisAux);
-                ciudadNueva.setProvincia(provinciaAux);
-                ciudadNueva.setNombre(jTVistaCiudadCiudad.getText());
-                ciudadNueva.setFechaDeTemporadaAlta(temporadaAlta);
-                ciudadNueva.setEstado(true);
-                CiudadData.cargarCiudad(ciudadNueva);
-            }
-        } else if (!vistaCiudadPais.equals("Nuevo Pais")) {
-            paisAux = PaisData.buscarPaisPorNombre(vistaCiudadPais);
-            provinciaAux.setNombre(jTVistaCiudadProvincia.getText());
-            provinciaAux.setPais(paisAux);
-            ProvinciaData.cargarProvincia(provinciaAux);
-            ciudadNueva.setNombre(jTVistaCiudadCiudad.getText());
-            ciudadNueva.setProvincia(provinciaAux);
-            ciudadNueva.setPais(paisAux);
-            ciudadNueva.setFechaDeTemporadaAlta(temporadaAlta);
-            ciudadNueva.setEstado(true);
-            CiudadData.cargarCiudad(ciudadNueva);
-        } else {
-            paisAux.setNombre(jTVistaCiudadPais.getText());
-            PaisData.cargarPais(paisAux);
-            provinciaAux.setNombre(jTVistaCiudadProvincia.getText());
-            provinciaAux.setPais(paisAux);
-            ProvinciaData.cargarProvincia(provinciaAux);
-            ciudadNueva.setNombre(jTVistaCiudadCiudad.getText());
-            ciudadNueva.setProvincia(provinciaAux);
-            ciudadNueva.setPais(paisAux);
-            ciudadNueva.setFechaDeTemporadaAlta(temporadaAlta);
-            ciudadNueva.setEstado(true);
-            CiudadData.cargarCiudad(ciudadNueva);
-        }
-
-        jTVistaCiudadCiudad.setText("");
-
-        jDCVistaCiudadTemporadaAlta.setDate(null);
-
-        jTVistaCiudadProvincia.setText("");
-        jTVistaCiudadProvincia.setVisible(false);
-        jTVistaCiudadPais.setVisible(false);
-
-        jTVistaCiudadPais.setText("");
-        jLNombreProvincia.setVisible(false);
-        jLNombrePais.setVisible(false);
-
-        cargarProvincias();
-        cargarPaises();
-    }//GEN-LAST:event_jBVistaCiudadAgregarActionPerformed
-
     private void jTVistaCiudadPaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTVistaCiudadPaisActionPerformed
         
     }//GEN-LAST:event_jTVistaCiudadPaisActionPerformed
@@ -1291,8 +1179,8 @@ public class Menu2 extends javax.swing.JInternalFrame {
         long cantidadDias = ChronoUnit.DAYS.between(paqueteNuevo.getEstadia().getCheckIn(), paqueteNuevo.getEstadia().getCheckOut());
         
         double valorTotal = importePasaje + (importeDiario * incrementoPorServicio * cantidadDias * incrementoPorTemporada);
-        System.out.println("Calculo en la vista: ");
-        System.out.println(importePasaje + " + ( " + importeDiario + " * " + incrementoPorServicio + " * " + cantidadDias + " * " + incrementoPorTemporada + " ) = " + valorTotal);
+        JOptionPane.showMessageDialog(null, "Valor de Paquete: " + valorTotal);                  
+            
         jTFVistaPaqueteValorTotal.setText(valorTotal + "");
         paqueteNuevo.setValorTotal(valorTotal);
         paqueteNuevo.setEstado(true);
@@ -1314,10 +1202,6 @@ public class Menu2 extends javax.swing.JInternalFrame {
         cargarElementosVistaPaquete();
         
     }//GEN-LAST:event_jBVistaPaqueteCrearActionPerformed
-
-    private void jTFVistaPaqueteValorTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFVistaPaqueteValorTotalActionPerformed
-        
-    }//GEN-LAST:event_jTFVistaPaqueteValorTotalActionPerformed
 
     private void jCBVistaPasajeOrigenItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jCBVistaPasajeOrigenItemStateChanged
         if (evt.getStateChange() == ItemEvent.SELECTED) {
@@ -1349,35 +1233,6 @@ public class Menu2 extends javax.swing.JInternalFrame {
         
 
     }//GEN-LAST:event_jTVistaPasajeImporteActionPerformed
-
-    private void jBVistaPasajeCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVistaPasajeCargarActionPerformed
-        Pasaje pasaje = new Pasaje();
-        
-        Ciudad ciudadaux = CiudadData.buscarCiudadPorNombre(vistaPasajeOrigen);
-        pasaje.setCiudadOrigen(ciudadaux);
-
-        ciudadaux = CiudadData.buscarCiudadPorNombre(vistaPasajeDestino);
-        pasaje.setCiudadDestino(ciudadaux);
-        
-        for (TipoTransporte tipo : TipoTransporte.values()){
-            if (tipo.getValorStr().equals(vistaPasajeTransporte)){
-                pasaje.setTipoTransporte(tipo); 
-                break;
-            }
-
-        }
-        
-        pasaje.setImporte(vistaPasajeImporte);
-        pasaje.setEstado(true);
-        PasajeData.crearPasaje(pasaje);
-
-        cargarTransporte();
-        cargarPasajeOrigen();
-        cargarPasajeDestino(vistaPasajeOrigen);
-        jTVistaPasajeImporte.setText("");
-        jBVistaPasajeCargar.setEnabled(false);
-    
-    }//GEN-LAST:event_jBVistaPasajeCargarActionPerformed
 
     private void jCBVistaPasajeTransporteItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jCBVistaPasajeTransporteItemStateChanged
         if (evt.getStateChange() == ItemEvent.SELECTED) {
@@ -1414,6 +1269,18 @@ public class Menu2 extends javax.swing.JInternalFrame {
     private void jTVistaEstadiaImporteDiarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTVistaEstadiaImporteDiarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTVistaEstadiaImporteDiarioActionPerformed
+
+    private void jBVistaCiudadAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVistaCiudadAgregarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBVistaCiudadAgregarActionPerformed
+
+    private void jBVistaEstablecimientoAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVistaEstablecimientoAgregarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBVistaEstablecimientoAgregarActionPerformed
+
+    private void jBVistaPasajeCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVistaPasajeCargarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBVistaPasajeCargarActionPerformed
 
     private void jBVistaEstadiaAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVistaEstadiaAgregarActionPerformed
         // TODO add your handling code here:

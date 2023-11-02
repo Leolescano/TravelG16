@@ -47,8 +47,6 @@ public class PaqueteData {
                 ps.setInt(4, paquete.getPasaje().getIdPasaje());
    
                 double valorTotal = pasajeAux.getImporte() + (estadiaAux.getImporteDiario() * estadiaAux.getServicio().getPorcentaje() * cantidadDias * estadiaAux.getTemporada().getPorcentaje());
-                System.out.println("Calculo en PaqueteData: ");
-                System.out.println(pasajeAux.getImporte() + " + ( " + estadiaAux.getImporteDiario() + " * " + estadiaAux.getServicio().getPorcentaje() + " * " + cantidadDias + " * " + estadiaAux.getTemporada().getPorcentaje() + ") = " + valorTotal);
                 ps.setDouble(5, paquete.getValorTotal());
               
                 ps.setBoolean(6, paquete.getEstado());

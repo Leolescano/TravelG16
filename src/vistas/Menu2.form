@@ -66,26 +66,22 @@
                               </Group>
                               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jCBVistaCiudadProvincia" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                                          <Component id="jCBVistaCiudadPais" min="-2" pref="150" max="-2" attributes="0"/>
-                                          <Component id="jTVistaCiudadCiudad" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLNombreProvincia" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLTemporadaAlta" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLNombrePais" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jTVistaCiudadProvincia" min="-2" pref="150" max="-2" attributes="0"/>
-                                          <Component id="jDCVistaCiudadTemporadaAlta" min="-2" pref="150" max="-2" attributes="0"/>
-                                          <Component id="jTVistaCiudadPais" min="-2" pref="150" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Component id="jBVistaCiudadAgregar" min="-2" pref="120" max="-2" attributes="0"/>
+                                  <Component id="jCBVistaCiudadProvincia" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="jCBVistaCiudadPais" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="jTVistaCiudadCiudad" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="jBVistaCiudadAgregar" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLNombreProvincia" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLTemporadaAlta" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLNombrePais" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jTVistaCiudadProvincia" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="jDCVistaCiudadTemporadaAlta" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="jTVistaCiudadPais" min="-2" pref="150" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -125,9 +121,9 @@
                           <Component id="jLPais" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLNombrePais" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                      <Component id="jBVistaCiudadAgregar" min="-2" pref="35" max="-2" attributes="0"/>
-                      <EmptySpace pref="277" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                      <Component id="jBVistaCiudadAgregar" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace pref="264" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -248,20 +244,6 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTVistaCiudadPaisActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jBVistaCiudadAgregar">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="SansSerif" size="16" style="1"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Agregar"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBVistaCiudadAgregarActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLTitulo">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -275,6 +257,20 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Geolocalizaci&#xf3;n"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jBVistaCiudadAgregar">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="16" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Cargar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBVistaCiudadAgregarActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -335,7 +331,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Component id="jLTitulo1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -352,9 +348,9 @@
                           <Component id="jLabel3" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="jTDTelefono" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="jBVistaEstablecimientoAgregar" min="-2" pref="35" max="-2" attributes="0"/>
-                      <EmptySpace pref="302" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+                      <Component id="jBVistaEstablecimientoAgregar" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="276" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -368,20 +364,6 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTAgregarEstablecActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JButton" name="jBVistaEstablecimientoAgregar">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="SansSerif" size="16" style="1"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Agregar"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBVistaEstablecimientoAgregarActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel1">
@@ -460,6 +442,20 @@
                 <Property name="text" type="java.lang.String" value="Agregar Establecimiento"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JButton" name="jBVistaEstablecimientoAgregar">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="16" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Agregar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBVistaEstablecimientoAgregarActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel3">
@@ -504,11 +500,11 @@
                                           <Group type="102" alignment="1" attributes="0">
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jBVistaPasajeCargar" min="-2" pref="120" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Component id="jCBVistaPasajeTransporte" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
                                                       <Component id="jTVistaPasajeImporte" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
                                                   </Group>
+                                                  <Component id="jBVistaPasajeCargar" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -546,9 +542,9 @@
                           <Component id="jLVistaPasajeImporte" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jTVistaPasajeImporte" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                      <Component id="jBVistaPasajeCargar" min="-2" pref="35" max="-2" attributes="0"/>
-                      <EmptySpace pref="266" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="jBVistaPasajeCargar" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -638,20 +634,6 @@
                 <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTVistaPasajeImporteKeyPressed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jBVistaPasajeCargar">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="SansSerif" size="16" style="1"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Cargar"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBVistaPasajeCargarActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JComboBox" name="jCBVistaPasajeTransporte">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -682,6 +664,20 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Agregar Pasaje"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jBVistaPasajeCargar">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="16" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Cargar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBVistaPasajeCargarActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -728,7 +724,7 @@
                                   <Component id="jCBVistaEstadiaTemporada" alignment="0" min="-2" pref="230" max="-2" attributes="0"/>
                                   <Component id="jCBVistaEstadiaCiudadDestino" alignment="0" min="-2" pref="230" max="-2" attributes="0"/>
                                   <Component id="jTVistaEstadiaImporteDiario" min="-2" pref="230" max="-2" attributes="0"/>
-                                  <Component id="jBVistaEstadiaAgregar" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
+                                  <Component id="jBVistaEstadiaAgregar" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -785,9 +781,9 @@
                           <Component id="jTVistaEstadiaImporteDiario" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="jLProvincia2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="jBVistaEstadiaAgregar" min="-2" pref="35" max="-2" attributes="0"/>
-                      <EmptySpace pref="113" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="jBVistaEstadiaAgregar" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace pref="112" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -963,7 +959,7 @@
                   <Font name="SansSerif" size="16" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Agregar"/>
               </Properties>
@@ -1033,7 +1029,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="293" max="-2" attributes="0"/>
                       <Component id="jLTitulo4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -1069,7 +1065,7 @@
                           <Component id="jLVistaPaquetePasajeViajandoEn" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="jCBVistaPaquetePasajeViajando" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="jLVistaPaquetePrecio" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                          <Component id="jTFVistaPaqueteValorTotal" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFVistaPaqueteValorTotal" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
                       <Component id="jBVistaPaqueteCrear" min="-2" pref="34" max="-2" attributes="0"/>
@@ -1252,19 +1248,6 @@
                 <Property name="text" type="java.lang.String" value="Valor del Paquete"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTFVistaPaqueteValorTotal">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="SansSerif" size="12" style="1"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFVistaPaqueteValorTotalActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JButton" name="jBVistaPaqueteCrear">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1291,6 +1274,16 @@
                   <Color blue="30" green="7e" red="c1" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Armado de paquetes"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFVistaPaqueteValorTotal">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="12" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
               </Properties>
             </Component>
           </SubComponents>
